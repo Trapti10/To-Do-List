@@ -73,10 +73,10 @@ ul li{
 
 
 #list-container li {
-  word-wrap: break-word;     /* Break long words */
-  white-space: normal;       /* Allow wrapping */
-  overflow-wrap: anywhere;   /* Newer browsers support */
-  padding-right: 55px;       /* space for delete button */
+  word-wrap: break-word;    
+  white-space: normal;     
+  overflow-wrap: anywhere;  
+  padding-right: 55px;      
 }
 ul li::before{
     content: '';
@@ -94,7 +94,7 @@ ul li::before{
 
 ul li.checked{
     color: #555;
-    /* text-decoration: line-through; */
+    
 }
 
 ul li.checked::before{
@@ -139,11 +139,10 @@ ul li img:hover{
 li img.disabled {
   opacity: 0.5;
   cursor: not-allowed;
-  pointer-events: none;      /* disable clicking */
-  transform: none !important; /* prevent hover transform */
+  pointer-events: none;      
+  transform: none !important; 
 }
 
-/* Prevent hover on disabled button */
 li img.disabled:hover {
   transform: none !important;
 }

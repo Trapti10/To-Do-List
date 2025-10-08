@@ -20,7 +20,7 @@ function addTask(){
         li.appendChild(span);
     }
 
-    inputBox.value = "";   // To clear the input feild after adding the text  
+    inputBox.value = "";   
     saveData();
 }
 
@@ -32,7 +32,7 @@ listContainer.addEventListener("click", function(e){
     }
     else if(e.target.tagName === "SPAN"){
         
-        e.target.parentElement.remove();   // parent element is li , so it will remove it(li)
+        e.target.parentElement.remove();   
         saveData();
     }
     const editbtn = e.target.querySelector(".editBtn")
